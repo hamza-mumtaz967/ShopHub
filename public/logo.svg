@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Kassa Logo</title>
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5ee7df"/>
+      <stop offset="50%" stop-color="#7f7fff"/>
+      <stop offset="100%" stop-color="#c77dff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#6b6b6b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- background circle with soft shadow -->
+  <g filter="url(#softShadow)">
+    <circle cx="400" cy="300" r="220" fill="url(#grad)"/>
+  </g>
+
+  <!-- geometric 'K' mark built from rectangles and rotated shapes -->
+  <g transform="translate(290,220) scale(1.1)">
+    <rect x="0" y="0" width="40" height="160" rx="8" fill="#ffffff" opacity="0.95" />
+    <rect x="40" y="0" width="110" height="40" rx="8" fill="#ffffff" opacity="0.95" transform="rotate(25 95 20)"/>
+    <rect x="40" y="120" width="110" height="40" rx="8" fill="#ffffff" opacity="0.95" transform="rotate(-25 95 140)"/>
+  </g>
+
+  <!-- subtle accent circle -->
+  <circle cx="560" cy="160" r="28" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Wordmark -->
+  <text x="400" y="620" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="56" text-anchor="middle" fill="#1f1f2e" letter-spacing="2">kassa</text>
+
+  <!-- small tagline -->
+  <text x="400" y="665" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#4b4b5b" opacity="0.9">modern • simple • adaptable</text>
+</svg>
